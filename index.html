@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猜答案游戏</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    img {
+      width: 300px;
+      height: auto;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>猜答案游戏</h1>
+  <img id="mainImage" src="image1.jpg" alt="问题图片">
+  <div class="button-container">
+    <button onclick="guess(1)">1</button>
+    <button onclick="guess(2)">2</button>
+    <button onclick="guess(3)">3</button>
+    <button onclick="guess(4)">4</button>
+    <button onclick="guess(5)">5</button>
+    <button onclick="guess(6)">6</button>
+    <button onclick="guess(7)">7</button>
+    <button onclick="guess(8)">8</button>
+  </div>
+  <div class="message" id="message"></div>
+  <script src="game.js"></script>
+</body>
+</html>
